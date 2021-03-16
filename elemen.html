@@ -1,0 +1,25 @@
+<DOCTYPE html>
+    <html lang=en>
+        <head>
+            <meta charset="UTF-8">
+            <title>Writing into a HTML Element with JavaScript</title>
+        </head>
+        <body>
+            <!--definisi id pada html-->
+           <p id="greet"></p>
+           <p id="result"></p>
+
+           <script>
+               //menulis teks string didalam sebuah elemen
+               document.getElementById("greet").innerHTML = "Hello Diana!";
+
+               //menulis sebuah nilai variabel didalam sebuah elemen
+               var x = 50;
+               var y = 30;
+               var sum = x + y;
+               //memanggil Id pada html
+               document.getElementById("result").innerHTML = sum;
+           </script>
+
+        </body>
+    </html>

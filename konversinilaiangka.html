@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Konversi Nilai Angka</title>
+        <!--menghubungkan pada css-->
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <script language="JavaScript">
+        //function untuk task code yang akan dijalankan
+        function conv(){
+            //mendefinisikan variabel dan menampilkan pada method 'send'
+            var num1=document.send. T1. value
+            if(num1>=0 && num1<=40)//menampilkan suatu kondisi
+            //menampilkan variabel T2 pada method 'send'
+            document.send.T2. value="E" 
+            else if(num1>=41 && num1<=55) 
+            document.send.T2. value="D"
+            else if(num1>=56 && num1<=60)
+            document.send.T2. value="C"
+            else if(num1>=61 && num1<=65)
+            document.send.T2. value="BC"
+            else if(num1>=66 && num1<=70)
+            document.send.T2. value="B"
+            else if(num1>=71 && num1<=80)
+            document.send.T2. value="AB"
+            else if(num1>=81 && num1<=100) 
+            document.send.T2. value="A"
+            else
+            document.send.T2. value="Bukan termasuk kategori"
+        }
+        //function untuk melakukan penghapusan inputan form  
+        function clearform(){
+        document.send.T1.value=" ";
+        document.send.T2.value=" ";
+        }
+     </script>
+<body>
+<!--menampilkan area div ini menggunakan css 'box'-->
+<div class="box">
+        <h1 class="title">Konversi Nilai</h1>
+    <!--form untuk user input dan menggunakan method 'send'-->
+    <form method="POST" name="send">
+        <!--tabel menggunakan css 'center'-->
+        <table class="center">
+            <!--menampilkan media input berupa teks-->
+            <tr> 
+                <td>Ketikkan dari angka(1-100)<input type="text" name="T1" size="20"></td>
+            </tr>
+            <tr>   
+                <td><input type="button" value="KONVERSI" name="B1" onclick=conv()></td>
+            </tr> 
+            
+            <tr>    
+                <td>Hasil Konversi <input type="text" name="T2" size="20"></td> 
+            </tr>
+            <!--menampilkan tombol 'KONVERSI'-->
+            <tr>
+                <!--untuk menggabungkan beberapa kolom-->
+                <td colspan="1"></td>
+                <td><input type="button" value="CLEAR" name="B2" onclick=clearform()></td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+
+</html>

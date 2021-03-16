@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kalkulator Sederhana</title>
+        <!--menghubungkan pada css-->
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+<script language="JavaScript">
+    //function untuk task code yang akan dijalankan    
+    function plus(){
+        //mendefinisikan variabel serta menampilkan pada method 'send' dengan karakter float
+        var T1=parseFloat(document.send. T1. value);
+        var T2=parseFloat(document.send. T2. value);
+        //mendefinisikan variabel 'result' dengan operasi didalamnya
+        var result=T1+T2;
+        //menampilkan variabel 'result' dengan nilai 'result' yang telah didefinisikan 
+        document.send.result.value=result;
+        }
+    function minus(){
+        var T1=parseFloat(document.send. T1. value);
+        var T2=parseFloat(document.send. T2. value);
+        var result=T1-T2;
+        document.send.result.value=result;
+    }
+    function kali(){
+        var T1=parseFloat(document.send. T1. value);
+        var T2=parseFloat(document.send. T2. value);
+        var result=T1*T2;
+        document.send.result.value=result;
+        }
+    function bagi(){
+        var T1=parseFloat(document.send. T1. value);
+        var T2=parseFloat(document.send. T2. value);
+        var result=T1/T2;
+        document.send.result.value=result;
+        }
+    //function untuk melakukan penghapusan inputan form    
+    function clearform(){
+        document.send.T1.value=" ";
+        document.send.T2.value=" ";
+        document.send.result.value=" ";
+    }
+</script>
+<body>
+<div class="box">
+    <h1 class="title">Kalkulator</h1>
+    <!--form HTML untuk user input dengan menggunakan method 'send'-->
+    <form method="POST" name="send">
+        <table class="center">
+            <tr>
+            <!--menampilkan media input teks dari user-->
+            <td>Masukkan bilangan ke-1
+                <br>
+                <input type="number" name="T1" id="bil1" size="10"></td>
+            </tr>
+            <tr><td>Bilangan ke-2
+                <br>
+                <input type="number" name="T2" id="bil2" size="10"></td>
+            </tr> 
+            <tr>
+            <!--menampilkan media input berupa tombol-->
+            <td>
+            <input type="button" value="+" name="B1" onclick=plus()>
+            <input type="button" value="-" name="B1" onclick=minus()>
+            <input type="button" value="x" name="B1" onclick=kali()>
+            <input type="button" value="/" name="B1" onclick=bagi()>
+            </td>
+            </tr>
+            <!--menampilkan media input dari variabel 'result'-->
+            <tr><td>HASIL : <input type="number" name="result" size="10"></td></tr>
+            <tr>
+                <td colspan="1"></td>
+                <td><input type="button" value="CLEAR" name="B2" onclick=clearform()></td>
+            </tr>
+            
+        </table>    
+    </form>
+</div>
+</body>
+
+</html>

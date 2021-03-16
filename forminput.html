@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+    </head>
+    <script language="JavaScript">
+        //function yang didalamnya berisi beberapa kode 
+        function test (){
+            //mandefinisikan variabel dan menampilkan pada method 'kirim'
+            var val1=document.kirim. T1. value
+            //penggunaan operator boolean 
+            if (val1%2==0)
+            //menampilkan pada method 'kirim'
+            document.kirim.T2. value="bilangan genap"
+            else
+            document.kirim.T2. value="bilangan ganjil"
+        }
+    </script>
+<body>
+    <!--menampilkan form dan method yang akan digunakan-->
+    <form method="POST" name="kirim">
+        <!--menampilkan media input berupa teks-->
+        <p>BIL<input type="text" name="T1" size="20">Merupakan BIL <input type="text" name="T2" size="20"></p>
+        <!--menampilkan tombol 'TEBAK'-->
+        <p><input type="button" value="TEBAK" name="B1" onclick=test()></p>
+    </form>
+  
+    
+</body>
+</html>

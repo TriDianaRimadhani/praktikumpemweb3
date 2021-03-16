@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Contoh Program JavaScript</title>
+    </head>
+
+    <script language="JavaScript">
+        //function yang didalamnya berisi beberapa kode 
+        function test()
+        {
+            //mendefinisikan variabel dan menampilkan di window prompt
+            val1=window.prompt("Input Nilai (1-5):")
+            //penggunaan operator switch case untuk kondisi tertentu
+            switch (val1)
+            {
+                case "1" :
+                    document.write("bilangan satu")
+                break
+                
+                case "2" :
+                    document.write("bilangan dua")
+                break
+                
+                case "3" :
+                    document.write("bilangan tiga")
+                break
+
+                case "4" :
+                    document.write("bilangan empat")
+                break
+
+                case "5" :
+                    document.write("bilangan lima")
+                break
+
+                default:
+                    document.write ("bilangan lainnya")
+            }
+        }
+    </script>
+
+<body>
+    <!--menampilkan tombol switch-->
+    <input type="button" name="button1" value="switch" onclick=test()>
+</body>
+
+</html>
